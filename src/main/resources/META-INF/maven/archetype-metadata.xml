@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        name="spring-boot-postgresql-archetype">
+
+    <requiredProperties>
+        <requiredProperty key="package">
+            <defaultValue>dev.andrewjfei.spring.boot.postgresql.archetype</defaultValue>
+        </requiredProperty>
+
+        <requiredProperty key="project-name">
+            <defaultValue>Spring Boot PostgreSQL Archetype</defaultValue>
+        </requiredProperty>
+
+        <requiredProperty key="project-description">
+            <defaultValue>A project generated based on a Spring Boot and PostgreSQL archetype.</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true">
+            <directory/>
+            <includes>
+                <include>.gitignore</include>
+                <include>**/*.xml</include>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>src/main/resources</directory>
+        </fileSet>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/test/java</directory>
+        </fileSet>
+    </fileSets>
+
+</archetype-descriptor>

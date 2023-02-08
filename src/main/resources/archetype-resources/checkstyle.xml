@@ -1,0 +1,54 @@
+<!DOCTYPE module PUBLIC
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+<module name="Checker">
+
+    <module name="TreeWalker">
+        <!-- Checks if there are any star imports in a class -->
+        <module name="AvoidStarImport"/>
+
+        <!-- Checks that the default case in a switch block is the last case -->
+        <module name="DefaultComesLast"/>
+
+        <!-- Checks if there are empty blocks with no code -->
+        <module name="EmptyBlock"/>
+
+        <!-- Checks if there are empty catch blocks with no code -->
+        <module name="EmptyCatchBlock"/>
+
+        <!-- Checks that there is an empty line between significant code -->
+        <module name="EmptyLineSeparator"/>
+
+        <!-- Checks if there are any empty statements -->
+        <module name="EmptyStatement"/>
+
+        <!-- Checks that the left curly brace is placed correctly -->
+        <module name="LeftCurly"/>
+
+        <!-- Checks if there is whitespace between the method name and method parameters -->
+        <module name="MethodParamPad"/>
+
+        <!-- Checks if there braces around code blocks -->
+        <module name="NeedBraces"/>
+
+        <!-- Checks if there are duplicate imports in a class -->
+        <module name="RedundantImport"/>
+
+        <!-- Checks if there are any system logs in a class -->
+        <module name="Regexp">
+            <property name="format" value="System\.(out|err)"/>
+            <property name="illegalPattern" value="true"/>
+            <property name="message" value="System logs should be replaced by logger."/>
+        </module>
+
+        <!-- Checks that the right curly brace is placed correctly -->
+        <module name="RightCurly"/>
+
+        <!-- Checks if there are unused imports -->
+        <module name="UnusedImports"/>
+    </module>
+
+    <!-- Checks if file ends in a new line -->
+    <module name="NewlineAtEndOfFile"/>
+
+</module>
