@@ -11,7 +11,7 @@ public class HelloWorldControllerTest {
     private HelloWorldController helloWorldController = new HelloWorldController();
 
     @Test
-    public void test() {
+    public void testHelloWorld_returnsCorrectResponse() {
         String expected = "Hello World!";
 
         ResponseEntity<String> response = helloWorldController.helloWorld();
